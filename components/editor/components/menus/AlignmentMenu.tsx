@@ -1,6 +1,6 @@
 // editor/components/menus/AlignmentMenu.tsx
 import { Editor } from "@tiptap/react";
-import { Button } from "../Button";
+import { Button } from "../ui/Button";
 import { AlignLeft, AlignCenter, AlignRight, AlignJustify } from "lucide-react";
 
 const ALIGNMENTS = [

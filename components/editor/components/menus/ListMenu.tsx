@@ -1,5 +1,5 @@
 import { Editor } from "@tiptap/react";
-import { Button } from "../Button";
+import { Button } from "../ui/Button";
 import { List, ListOrdered, Indent, Outdent } from "lucide-react";
 
 export const ListMenu: React.FC<{ editor: Editor }> = ({ editor }) => {

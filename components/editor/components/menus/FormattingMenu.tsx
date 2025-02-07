@@ -1,5 +1,5 @@
 import { Editor } from "@tiptap/react";
-import { Button } from "../Button";
+import { Button } from "../ui/Button";
 import {
     BoldIcon,
     ItalicIcon,

@@ -5,8 +5,8 @@ import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import { convertToHtml } from "mammoth";
 import { Editor } from "@tiptap/react";
-import { Button } from "../Button";
-import { FileInput } from "lucide-react";
+import { Button } from "../ui/Button";
+import Image from "next/image";
 
 export const ImportWordMenu: React.FC<{ editor: Editor }> = ({ editor }) => {
     const onDrop = useCallback(
@@ -42,7 +42,13 @@ export const ImportWordMenu: React.FC<{ editor: Editor }> = ({ editor }) => {
                 toolTip="Import Word Document"
                 className="hover:bg-gray-100"
             >
-                <FileInput className="w-4 h-4" />
+                <Image
+                    src="/icons/microsoft-word-icon.svg"
+                    alt="Word"
+                    width={24}
+                    height={24}
+                    className="w-4 h-4"
+                />
             </Button>
         </div>
     );

@@ -10,16 +10,17 @@ export const RichTextEditor = () => {
     const editor = useEditor({
         extensions,
         immediatelyRender: false,
-        content: "<p>Start typing...</p>",
+        content: "",
         editorProps: {
             attributes: {
-                class: "min-h-[200px]",
+                class: "min-h-[200px] outline outline-1 outline-gray-400 focus:outline-gray-400 p-2",
+                placeholder: "Start typing...",
             },
         },
     });
 
     return (
-        <div>
+        <div className="flex lg:flex-row flex-col gap-4">
             <div className="mx-auto my-8 max-w-4xl">
                 <MenuBar editor={editor} />
                 <Content editor={editor} />

@@ -1,6 +1,6 @@
 // editor/components/menus/ColorMenu.tsx
 import { Editor } from "@tiptap/react";
-import { Button } from "../Button";
+import { Button } from "../ui/Button";
 import { PaintBucket } from "lucide-react";
 import { cn } from "@/lib/utils"; // Assuming you have a utility class function
 
